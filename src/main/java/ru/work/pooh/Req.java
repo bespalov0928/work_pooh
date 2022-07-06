@@ -12,8 +12,15 @@ public class Req {
         this.mode = setMode();
         this.method = setMethod();
         this.nameQueue = setNameQueue();
-
     }
+
+    public Req(String method, String mode,  String nameQueue, String text) {
+        this.text = text;
+        this.mode = mode;
+        this.method = method;
+        this.nameQueue = nameQueue;
+    }
+
 
     public void setValueOf(String key) {
         String str = "";
